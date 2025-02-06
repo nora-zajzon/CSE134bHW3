@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nora Zajzon</title>
+</head>
+<script>
+    // will eventually add button scripting to show and hide classes
+</script>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="experiemental.html">Experimental</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>About Me</h1>
+        
+        <section>
+            <h2>Quick Facts</h2>
+            <datalist id="programming-languages">
+                <option value="Python">
+                <option value="JavaScript">
+                <option value="Java">
+                <option value="C++">
+                <option value="HTML/CSS">
+            </datalist>
+            
+            <dialog id="welcome-dialog">
+                <p>Welcome to my about page! I'm excited to share my story with you.</p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
+
+            <p>I'm a second-year Computer Science student at UCSD and currently working as an intern at StoryIt. 
+            <ins datetime="2024-03-15">Recently, I've been focusing on machine learning and web development projects!</ins></p>
+            
+            <hr>
+
+            <h2>My Coding Journey</h2>
+            <pre><code>
+function aboutMe() {
+    const skills = ['Python', 'JavaScript', 'React'];
+    const passion = 'Building meaningful applications';
+    return `I love ${passion} using ${skills.join(', ')}`;
+                }
+            </code></pre>
+            <button id="show-classes" aria-expanded="false">View My Coursework</button>
+            <div id="classes-content"></div>
+
+            <h2>My Furry Friends</h2>
+            <p>Meet my adorable dogs, Chippy and Cherry!</p>
+            <video controls height="300">
+                <source src="chippy.mp4" type="video/mp4" width="300">
+                Your browser doesn't support video playback.
+            </video>
+            <img src="EB17A0DA-5221-41BC-BC86-F744FEF566E1_1_105_c.jpeg" alt="Cherry" height="300"><br>
+
+            <h2>Musical Journey</h2>
+            <p>I've been playing piano for over 10 years. Here's a recent piece I learned:</p>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser doesn't support audio playback.
+            </audio>
+
+            <h2>Artistic Pursuits</h2>
+            <p>I've been oil painting since I was 7.</p>
+            
+            <h3>A painting I recently replicated:</h3>
+            <iframe 
+                src="https://www.wikiart.org/en/claude-monet/the-promenade-woman-with-a-parasol"
+                width="600" 
+                height="400" 
+                title="Woman with a Parasol by Claude Monet"
+                loading="lazy"
+                sandbox="allow-same-origin allow-scripts">
+            </iframe>
+
+            <h3>An original painting:</h3>
+            <img src="IMG_5385.jpeg" alt="My original oil painting" width="300"><br>
+            <del datetime="2023-06">This is a real photo that my dog dressed up for (joke).</del>
+
+            <h2>Search My Interests</h2>
+            <search>
+                <form action="/search" method="get">
+                    <legend>Search through my hobbies and interests:</legend>
+                    <input type="search" name="q" placeholder="e.g., piano, painting, coding">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
+
+            <template id="hobby-template">
+                <div class="hobby-card">
+                    <h3>Hobby Title</h3>
+                    <p>Hobby description goes here</p>
+                    <img src="" alt="Hobby image">
+                </div>
+            </template>
+
+            <template id="classes-template">
+                <div class="classes-container">
+                    <h3>Coursework</h3>
+                    <ul class="classes-list">
+                        <li>CSE 134B - Web Client Languages</li>
+                        <li>CSE 110 - Software Engineering</li>
+                        <li>CSE 101 - Design and Analysis of Algorithms</li>
+                        <li>CSE 110 - Software Engineering</li>
+                        <li>CSE 100 - Advanced Data Structures</li>
+                        <li>COGS 108 - Data Science in Practice</li>
+                        <li>MATH 183 - Statistical Methods</li>
+                    </ul>
+                </div>
+            </template>
+        </section>
+    </main>
+    <footer>
+        <p>Made with ❤️ by Nora Zajzon</p>
+    </footer>
+</body>
+</html> 
