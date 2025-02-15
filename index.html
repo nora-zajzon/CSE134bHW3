@@ -48,22 +48,10 @@
                 <div class="bio-left">
                     <picture class="bio-image">
                         <!-- WebP format - best compression -->
-                        <source 
-                            type="image/webp"
-                            srcset="NoraImg.webp"
-                            sizes="(max-width: 768px) 100vw,
-                                    (max-width: 1024px) 50vw,
-                                    300px">
-                        
-                        <!-- JPEG format - fallback -->
-                        <source 
-                            type="image/jpeg"
-                            srcset="NoraImg-large.jpeg 1024w,
-                                    NoraImg-medium.jpeg 640w,
-                                    NoraImg-small.jpeg 320w"
-                            sizes="(max-width: 768px) 100vw,
-                                    (max-width: 1024px) 50vw,
-                                    300px">
+                        <source type="image/webp" srcset="NoraImg.webp">
+                        <!-- fallback -->
+                        <source type="image/jpeg" srcset="NoraImg.jpg">
+                        <source type="image/png" srcset="NoraImg-large.png">
                         
                         <!-- Default image with proper attributes -->
                         <img src="NoraImg.webp" 
