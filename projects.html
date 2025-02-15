@@ -16,22 +16,25 @@
         customElements.define('hello-world', HelloWorld);
     </script>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="experiemental.html">Experimental</a>
+    <header class="site-header">
+        <nav class="nav-container nav-fixed">
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h1>Projects</h1>
-            
             <article>
                 <h2>Influencer Marketing Web Application</h2>
                 <p>As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently, offering an end-to-end solution for influencer partnerships.
@@ -55,7 +58,7 @@
                         <h3>Brain-Computer Interface (BCI) Dino Game</h3>
                         <p>One of my most exciting projects involved integrating brain-computer interface (BCI) technology with the classic Google Chrome Dinosaur Game. Using the Muse Headband API, which records real-time EEG (electroencephalography) signals, I developed a system where a player could control the game by simply blinking. This project required extensive signal processing, as I had to filter and interpret EEG data to detect blinks and translate them into game inputs.
 
-                            I implemented a JavaScript-based interface to interact with the Muse API, allowing real-time response to brain activity. This project placed second in a district STEM competition, where I presented my findings to a panel of judges. Additionally, I wrote an article on the project detailing the methodology and results, <a href="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267" target="_blank">available here</a>.</p>
+                            I implemented a JavaScript-based interface to interact with the Muse API, allowing real-time response to brain activity. This project placed second in a district STEM competition, where I presented my findings to a panel of judges. Additionally, I wrote an article on the project detailing the methodology and results, <a href="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267" target="_blank" style="color: #60829c;">available here</a>.</p>
                     </li>
                     <li>
                         <h3>Routine Tracker Mobile Application - CSE 110 Team Project</h3>
@@ -69,7 +72,7 @@
         </section>
     </main>
     <footer>
-        <p>Made with ❤️ by Nora Zajzon</p>
+        <p>Made with &hearts; by Nora Zajzon</p>
     </footer>
 </body>
 </html> 

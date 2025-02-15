@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Nora Zajzon</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <script>
     // JavaScript can be added here
     class HelloWorld extends HTMLElement {
@@ -18,23 +19,24 @@
     customElements.define('hello-world', HelloWorld);
 </script>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="research.html">Research</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="experiemental.html">Experimental</a>
+    <header class="site-header">
+        <nav class="nav-container nav-fixed">
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
+            <input type="checkbox" id="nav-toggle">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-
     <main>
         <section>
-            <h1>Research</h1>
-            
             <article>
-                <h2>Current Research</h2>
+                <h1>Current Research</h1>
                 <details>
                     <summary>Decoding Handwriting from EEG</summary>
                     <p>I am currently engaged in a research project at UC San Diego focused on detecting handwriting using EEG (electroencephalography). This project explores both physical handwriting and mental imagery of handwriting, leveraging machine learning classification models such as sLDA (sparse Linear Discriminant Analysis) to analyze neural activity patterns.
@@ -53,7 +55,7 @@
         </section>
     </main>
     <footer>
-        <p>Made with ❤️ by Nora Zajzon</p>
+        <p>Made with &hearts; by Nora Zajzon</p>
     </footer>
 </body>
 </html> 
